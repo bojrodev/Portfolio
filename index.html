@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Bojro Dev - AI Developer & Mobile Engineer.">
+    <title>Bojro Dev | AI & Mobile</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <nav>
+        <div class="logo">bojrodev</div>
+        
+        <div class="nav-right">
+            <div class="nav-links">
+                <a href="index.html" class="active">Home</a>
+                <a href="projects.html">Work</a>
+                <a href="about.html">About</a>
+            </div>
+            <button id="theme-toggle-btn" class="theme-toggle" title="Toggle Theme">☀️</button>
+        </div>
+    </nav>
+
+    <div class="container hero">
+        
+        <div class="profile-container hidden" style="transition-delay: 100ms;">
+            <img src="profilephoto.webp" alt="Bojro Dev" class="profile-img no-drag">
+        </div>
+
+        <p class="subtitle typing-cursor" id="typewriter-text"></p>
+        
+        <h1 class="glitch hidden" style="transition-delay: 200ms;">
+            Building the intersection<br>
+            of Native Mobile &<br>
+            Generative AI.
+        </h1>
+        
+        <div class="terminal-card hidden" style="transition-delay: 400ms;">
+            <span class="terminal-header">> MISSION_BRIEF</span>
+            <p class="mono" style="color: var(--text-muted);">
+                I create optimized Android clients for heavy compute models and fine-tune LLMs on local hardware. <span style="color: var(--text-main);">Minimalist. Performance-obsessed.</span>
+            </p>
+        </div>
+
+        <div class="btn-group hidden" style="transition-delay: 600ms;">
+            <a href="projects.html" class="btn btn-outline">View Projects</a>
+            <a href="https://huggingface.co/bojrodev" target="_blank" class="btn btn-glow">Hugging Face</a>
+            <a href="https://github.com/bojrodev" target="_blank" class="btn btn-github">GitHub</a>
+        </div>
+    </div>
+
+    <footer>
+        <p>SYSTEM_ID: BOJRO_DEV © 2025.</p>
+        <br>
+        <button id="discord-btn" onclick="copyDiscord()" class="btn-discord">
+            DISCORD: bojrodev
+        </button>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

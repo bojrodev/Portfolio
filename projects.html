@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Work | Bojro Dev</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <div class="logo">bojrodev</div>
+        <div class="nav-right">
+            <div class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="projects.html" class="active">Work</a>
+                <a href="about.html">About</a>
+            </div>
+            <button id="theme-toggle-btn" class="theme-toggle" title="Toggle Theme">☀️</button>
+        </div>
+    </nav>
+
+    <div class="container">
+        <h2 class="glitch hidden" style="margin-top: 4rem; font-size: 2.5rem; color: var(--text-main); font-family: var(--font-header);">
+            FEATURED PROJECTS
+        </h2>
+        <p class="mono hidden" style="color: var(--accent); margin-bottom: 3rem;">> ACCESSING_ARCHIVE...</p>
+        
+        <div class="grid">
+            <div class="card hidden" style="transition-delay: 100ms;">
+                <h3>Resolver WebUI Client</h3>
+                <p class="mono" style="color: var(--text-muted); margin-bottom: 1.5rem; font-size: 0.85rem;">
+                    Native Android client for Stable Diffusion WebUI Forge. Bridges web tech with Android Foreground Services.
+                </p>
+                <div>
+                    <div class="tag">Capacitor</div>
+                    <div class="tag">JavaScript</div>
+                    <div class="tag">Android API</div>
+                </div>
+            </div>
+
+            <div class="card hidden" style="transition-delay: 200ms;">
+                <h3>LLM Fine-tunes</h3>
+                <p class="mono" style="color: var(--text-muted); margin-bottom: 1.5rem; font-size: 0.85rem;">
+                    Custom GGUF model merging and training using Unsloth on RTX. Optimized for coding assistance.
+                </p>
+                <div>
+                    <div class="tag">Python</div>
+                    <div class="tag">Unsloth</div>
+                    <div class="tag">PyTorch</div>
+                </div>
+            </div>
+
+            <div class="card hidden" style="transition-delay: 300ms;">
+                <h3>SDXL & Flux LoRAs</h3>
+                <p class="mono" style="color: var(--text-muted); margin-bottom: 1.5rem; font-size: 0.85rem;">
+                    Training aesthetic adapters for Flux and Turbo models. Focused on high-fidelity style transfer.
+                </p>
+                <div>
+                    <div class="tag">Diffusers</div>
+                    <div class="tag">Kohya_ss</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <footer class="hidden" style="transition-delay: 400ms;">
+        <p style="margin-bottom: 1rem;">REPOSITORY_ACCESS:</p>
+        <div style="display: flex; justify-content: center; gap: 15px; flex-wrap: wrap; margin-bottom: 2rem;">
+            <a href="https://github.com/bojrodev" target="_blank" class="btn btn-github">GitHub</a>
+            <a href="https://huggingface.co/bojrodev" target="_blank" class="btn btn-glow">Hugging Face</a>
+        </div>
+        <button id="discord-btn" onclick="copyDiscord()" class="btn-discord">
+            DISCORD: bojrodev
+        </button>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

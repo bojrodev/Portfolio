@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About | Bojro Dev</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <div class="logo">bojrodev</div>
+        <div class="nav-right">
+            <div class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="projects.html">Work</a>
+                <a href="about.html">About</a>
+            </div>
+            <button id="theme-toggle-btn" class="theme-toggle" title="Toggle Theme">☀️</button>
+        </div>
+    </nav>
+
+    <div class="container" style="max-width: 900px; margin-top: 4rem;">
+        
+        <div style="display: flex; align-items: center; gap: 2rem; margin-bottom: 3rem;" class="hidden">
+            <div class="profile-container" style="width: 100px; height: 100px; margin: 0;">
+                <img src="profilephoto.webp" alt="Bojro Dev" class="profile-img no-drag">
+            </div>
+            <div>
+                <h1 class="glitch" style="font-size: 2.5rem; margin-bottom: 0.5rem;">IDENTITY: BOJRO</h1>
+                <p class="mono" style="color: var(--accent);">STATUS: ONLINE // REGION: BGD</p>
+            </div>
+        </div>
+
+        <div class="identity-grid">
+            
+            <div class="identity-card hidden" style="transition-delay: 100ms;">
+                <div class="identity-header">
+                    <span class="mono" style="font-weight: bold;">> BIO_DATA</span>
+                    <span class="id-badge">VERIFIED</span>
+                </div>
+                <p class="mono" style="color: var(--text-muted); line-height: 1.8;">
+                    Specialized unit in the "hard parts" of AI implementation. Focusing on bridging heavy compute models with accessible consumer interfaces.
+                    <br><br>
+                    Current Objective: bringing generative AI to native mobile environments via optimized clients.
+                </p>
+            </div>
+
+            <div class="identity-card hidden" style="transition-delay: 200ms;">
+                <div class="identity-header">
+                    <span class="mono" style="font-weight: bold;">> TECH_ARSENAL</span>
+                    <span class="id-badge">LVL.MAX</span>
+                </div>
+                <ul class="tech-list" style="list-style: none;">
+                    <li><strong>LANGUAGES:</strong> JS (ES6+), Python, Java</li>
+                    <li><strong>MOBILE:</strong> Capacitor, Android Native</li>
+                    <li><strong>AI OPS:</strong> PyTorch, Unsloth, Llama.cpp</li>
+                    <li><strong>TRAINING:</strong> SDXL, Flux LoRAs, GGUF</li>
+                    <li><strong>VISUAL:</strong> Blender, ControlNet</li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="identity-card hidden" style="margin-top: 2rem; transition-delay: 300ms;">
+            <div class="identity-header">
+                <span class="mono" style="font-weight: bold;">> DIRECTIVE_01</span>
+            </div>
+            <p class="mono" style="color: var(--text-main); font-size: 1.1rem; border-left: 3px solid var(--accent); padding-left: 1rem;">
+                "Build software for the sake of your Convenience. IF you can't find it, build it yourself."
+            </p>
+        </div>
+    </div>
+    
+    <footer>
+        <p>SYSTEM_ID: BOJRO_DEV © 2025.</p>
+        <br>
+        <button id="discord-btn" onclick="copyDiscord()" class="btn-discord">
+            DISCORD: bojrodev
+        </button>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
