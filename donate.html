@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Support | Bojro Dev</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <div class="logo">bojrodev</div>
+        <div class="nav-right">
+            <div class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="projects.html">Work</a>
+                <a href="about.html">About</a>
+                <a href="donate.html" class="active">Support</a>
+            </div>
+            <button id="theme-toggle-btn" class="theme-toggle" title="Toggle Theme">☀️</button>
+        </div>
+    </nav>
+
+    <div class="container" style="max-width: 900px; margin-top: 4rem;">
+        
+        <h1 class="glitch hidden" style="font-size: 2.5rem; margin-bottom: 0.5rem;">SUPPORT_SYSTEM</h1>
+        <p class="mono hidden" style="color: var(--accent); margin-bottom: 3rem;">> INITIATING_DONATION_PROTOCOL...</p>
+
+        <div class="terminal-card hidden">
+            <span class="terminal-header">> STATUS_UPDATE</span>
+            <p class="mono" style="color: var(--text-muted);">
+                Resolver, my fine-tuned models and Gamebanana mods are completely free and open-source. If you find my tools useful, consider sending a tip. Donations directly fund API costs, server hosting, and compute time for training new models.
+            </p>
+        </div>
+
+        <h2 class="mono hidden" style="margin-top: 3rem; margin-bottom: 1.5rem; font-size: 1.2rem; color: var(--text-main);">
+            > SELECT_NETWORK
+        </h2>
+
+        <div class="identity-grid">
+            
+            <div class="identity-card hidden" style="transition-delay: 100ms;">
+                <div class="identity-header">
+                    <span class="mono" style="font-weight: bold;">USDT (Tether)</span>
+                    <span class="id-badge">BEP20</span>
+                </div>
+                
+                <div style="text-align: center; margin-bottom: 1.5rem; background: #fff; padding: 10px; border-radius: 4px; box-shadow: 0 0 15px var(--accent-glow);">
+                    <img src="bnb.jpg" alt="BNB Smart Chain QR" style="width: 100%; max-width: 200px; display: block; margin: 0 auto;">
+                </div>
+
+                <p class="mono" style="color: var(--text-muted); font-size: 0.8rem; margin-bottom: 1rem;">
+                    BNB Smart Chain. Recommended for the lowest transaction fees (~$0.20).
+                </p>
+                
+                <div style="background: rgba(0,0,0,0.3); padding: 10px; border: 1px dashed var(--border); margin-bottom: 1rem; word-break: break-all; font-family: var(--font-mono); font-size: 0.85rem; color: var(--text-main);">
+                    <span id="bep20-addr">0xfc91de6d7c188732375a4bdd04a457cb1c264d2a</span>
+                </div>
+                
+                <button class="btn btn-outline" style="width: 100%; font-size: 0.8rem;" onclick="copyCryptoAddr('bep20-addr', this)">
+                    COPY ADDRESS
+                </button>
+            </div>
+
+            <div class="identity-card hidden" style="transition-delay: 200ms;">
+                <div class="identity-header">
+                    <span class="mono" style="font-weight: bold;">USDT (Tether)</span>
+                    <span class="id-badge">TRC20</span>
+                </div>
+                
+                <div style="text-align: center; margin-bottom: 1.5rem; background: #fff; padding: 10px; border-radius: 4px; box-shadow: 0 0 15px var(--accent-glow);">
+                    <img src="trc.jpg" alt="Tron Network QR" style="width: 100%; max-width: 200px; display: block; margin: 0 auto;">
+                </div>
+
+                <p class="mono" style="color: var(--text-muted); font-size: 0.8rem; margin-bottom: 1rem;">
+                    Tron Network. The global standard supported by almost all exchanges.
+                </p>
+                
+                <div style="background: rgba(0,0,0,0.3); padding: 10px; border: 1px dashed var(--border); margin-bottom: 1rem; word-break: break-all; font-family: var(--font-mono); font-size: 0.85rem; color: var(--text-main);">
+                    <span id="trc20-addr">TDPV3qcDgEMknupaQSf9ia2PDmd1pPcL3S</span>
+                </div>
+                
+                <button class="btn btn-outline" style="width: 100%; font-size: 0.8rem;" onclick="copyCryptoAddr('trc20-addr', this)">
+                    COPY ADDRESS
+                </button>
+            </div>
+        </div>
+        
+        <div class="identity-card hidden" style="margin-top: 2rem; transition-delay: 300ms;">
+            <div class="identity-header">
+                <span class="mono" style="font-weight: bold;">> CREDIT_CARD_USERS</span>
+            </div>
+            <p class="mono" style="color: var(--text-main); font-size: 0.95rem; border-left: 3px solid var(--accent); padding-left: 1rem;">
+                Don't have a crypto wallet? You can easily use <a href="https://www.moonpay.com/buy" target="_blank" style="color: var(--accent); text-decoration: none; border-bottom: 1px dashed var(--accent);">MoonPay</a> or <a href="https://p2p.binance.com/" target="_blank" style="color: var(--accent); text-decoration: none; border-bottom: 1px dashed var(--accent);">Binance</a> to buy USDT with your Credit Card, Google Pay, or Apple Pay, and send it directly to one of the addresses above.
+            </p>
+        </div>
+    </div>
+    
+    <footer class="hidden" style="transition-delay: 400ms;">
+        <p>SYSTEM_ID: BOJRO_DEV © 2025.</p>
+        <br>
+        <button id="discord-btn" onclick="copyDiscord()" class="btn-discord">
+            DISCORD: bojrodev
+        </button>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        // Copy to clipboard function for crypto addresses
+        function copyCryptoAddr(elementId, btnElement) {
+            const addr = document.getElementById(elementId).innerText;
+            navigator.clipboard.writeText(addr).then(() => {
+                const originalText = btnElement.innerHTML;
+                btnElement.innerHTML = "COPIED! ✓";
+                btnElement.style.borderColor = "var(--accent)";
+                btnElement.style.color = "var(--accent)";
+                
+                setTimeout(() => {
+                    btnElement.innerHTML = originalText;
+                    btnElement.style.borderColor = "";
+                    btnElement.style.color = "";
+                }, 2000);
+            }).catch(err => {
+                console.error('Failed to copy', err);
+            });
+        }
+    </script>
+</body>
+</html>
