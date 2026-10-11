@@ -3,62 +3,146 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="google-site-verification" content="AOjN1oOac89Oa-KpfszVWwysz67UPwdcBON0cIAdG-A" />
-    <meta name="description" content="Bojro Dev - Software Developer">
-    <title>Bojro Dev | Software Development</title>
+    <meta name="description" content="Building native Android clients for heavy compute models and fine-tuning LLMs on local hardware.">
+    <title>Bojro — Developer & AI Builder</title>
+    <link rel="icon" href="profilephoto.webp" type="image/webp">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="style.css">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://bojrodev.com/">
+    <meta property="og:title" content="Bojro — Developer &amp; AI Builder">
+    <meta property="og:description" content="Building native Android clients for heavy compute models and fine-tuning LLMs on local hardware.">
+    <meta property="og:image" content="https://bojrodev.com/profilephoto.webp">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Bojro — Developer &amp; AI Builder">
+    <meta name="twitter:description" content="Building native Android clients for heavy compute models and fine-tuning LLMs on local hardware.">
+    <meta name="twitter:image" content="https://bojrodev.com/profilephoto.webp">
 </head>
 <body>
-
-    <nav>
-        <div class="logo">bojrodev</div>
-        
-        <div class="nav-right">
-            <div class="nav-links">
-                <a href="index.html" class="active">Home</a>
-                <a href="projects.html">Work</a>
-                <a href="about.html">About</a>
-                <a href="donate.html">Support</a>
+    <main class="container">
+        <header class="hero-header">
+            <img src="profilephoto.webp" alt="Bojro" class="avatar">
+            <div class="hero-intro">
+                <span class="status-pill"><span class="status-dot" aria-hidden="true"></span> Available for open-source &amp; tools</span>
+                <h1>Bojrodev</h1>
+                <p class="bio">Building native Android clients for heavy compute models and fine-tuning LLMs on local hardware. Minimalist and performance-obsessed.</p>
+                <nav class="social-links" aria-label="Social links">
+                    <a href="https://github.com/bojrodev" target="_blank" rel="noopener noreferrer" class="btn btn-primary">GitHub</a>
+                    <a href="https://huggingface.co/bojrodev" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">Hugging Face</a>
+                    <a href="https://discord.gg/3hq5rt6k" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">Discord</a>
+                </nav>
             </div>
-            <button id="theme-toggle-btn" class="theme-toggle" title="Toggle Theme">☀️</button>
-        </div>
-    </nav>
+        </header>
 
-    <div class="container hero">
-        
-        <div class="profile-container hidden" style="transition-delay: 100ms;">
-            <img src="profilephoto.webp" alt="Bojro Dev" class="profile-img no-drag">
-        </div>
+        <section class="section" aria-labelledby="work-title">
+            <div class="section-heading">
+                <h2 class="section-title" id="work-title">Selected work</h2>
+                <span class="section-kicker">Projects &amp; experiments</span>
+            </div>
+            <div class="bento-grid">
+                <article class="card bento-main">
+                    <div class="card-header">
+                        <h3>Resolver WebUI Client</h3>
+                        <span class="badge badge-active">Active</span>
+                    </div>
+                    <p>A native Android client for Stable Diffusion WebUI Forge, bridging web technology with Android foreground services for seamless mobile generation.</p>
+                    <div class="tag-row" aria-label="Technologies">
+                        <span class="tag">Capacitor</span>
+                        <span class="tag">JavaScript</span>
+                        <span class="tag">Android API</span>
+                    </div>
+                </article>
 
-        <p class="subtitle typing-cursor" id="typewriter-text"></p>
-        
-        <h1 class="glitch hidden" style="transition-delay: 200ms;">
-            Building the intersection<br>
-            of Native Mobile &<br>
-            Generative AI.
-        </h1>
-        
-        <div class="terminal-card hidden" style="transition-delay: 400ms;">
-            <span class="terminal-header">> MISSION_BRIEF</span>
-            <p class="mono" style="color: var(--text-muted);">
-                I create optimized Android clients for heavy compute models and fine-tune LLMs on local hardware. <span style="color: var(--text-main);">Minimalist. Performance-obsessed.</span>
-            </p>
-        </div>
+                <article class="card">
+                    <div class="card-header">
+                        <h3>LLM Fine-tunes</h3>
+                        <span class="badge">Local AI</span>
+                    </div>
+                    <p>Custom GGUF model merging and training with Unsloth on RTX hardware, optimized for local coding assistance.</p>
+                    <div class="tag-row" aria-label="Technologies">
+                        <span class="tag">Python</span>
+                        <span class="tag">Unsloth</span>
+                        <span class="tag">PyTorch</span>
+                    </div>
+                </article>
 
-        <div class="btn-group hidden" style="transition-delay: 600ms;">
-            <a href="projects.html" class="btn btn-outline">View Projects</a>
-            <a href="https://huggingface.co/bojrodev" target="_blank" class="btn btn-glow">Hugging Face</a>
-            <a href="https://github.com/bojrodev" target="_blank" class="btn btn-github">GitHub</a>
-        </div>
-    </div>
+                <article class="card">
+                    <div class="card-header">
+                        <h3>SDXL &amp; Flux LoRAs</h3>
+                        <span class="badge">Image AI</span>
+                    </div>
+                    <p>Aesthetic adapter training for Flux and Turbo models, focused on high-fidelity style transfer.</p>
+                    <div class="tag-row" aria-label="Technologies">
+                        <span class="tag">Diffusers</span>
+                        <span class="tag">Kohya_ss</span>
+                    </div>
+                </article>
+            </div>
+        </section>
 
-    <footer>
-        <p>SYSTEM_ID: BOJRO_DEV © 2025.</p>
-        <br>
-        <button id="discord-btn" onclick="copyDiscord()" class="btn-discord">
-            DISCORD: bojrodev
-        </button>
-    </footer>
+        <section class="section" aria-labelledby="stack-title">
+            <div class="section-heading">
+                <h2 class="section-title" id="stack-title">Tech stack</h2>
+                <span class="section-kicker">Tools I work with</span>
+            </div>
+            <div class="card tech-card">
+                <div class="tech-group">
+                    <h3 class="tech-label">Languages &amp; mobile</h3>
+                    <ul class="chip-list">
+                        <li class="chip">JavaScript</li>
+                        <li class="chip">Python</li>
+                        <li class="chip">Java</li>
+                        <li class="chip">Capacitor</li>
+                        <li class="chip">Android</li>
+                    </ul>
+                </div>
+                <div class="tech-group">
+                    <h3 class="tech-label">AI &amp; compute</h3>
+                    <ul class="chip-list">
+                        <li class="chip">PyTorch</li>
+                        <li class="chip">Unsloth</li>
+                        <li class="chip">Llama.cpp</li>
+                        <li class="chip">SDXL</li>
+                        <li class="chip">Flux</li>
+                        <li class="chip">GGUF</li>
+                        <li class="chip">ControlNet</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section class="section" aria-labelledby="support-title">
+            <div class="section-heading">
+                <h2 class="section-title" id="support-title">Support the work</h2>
+                <span class="section-kicker">USDT · Tether</span>
+            </div>
+            <p class="section-desc">Open-source tools and models are free. Tips help cover API costs and local training compute.</p>
+            <div class="bento-grid two-col">
+                <article class="card crypto-card">
+                    <div class="card-header">
+                        <h3>USDT</h3>
+                        <span class="badge">BEP20</span>
+                    </div>
+                    <p class="crypto-addr" id="bep20-addr">0xfc91de6d7c188732375a4bdd04a457cb1c264d2a</p>
+                    <button class="btn btn-secondary btn-full" type="button" onclick="copyCryptoAddr('bep20-addr', this)">Copy BEP20 address</button>
+                </article>
+
+                <article class="card crypto-card">
+                    <div class="card-header">
+                        <h3>USDT</h3>
+                        <span class="badge">TRC20</span>
+                    </div>
+                    <p class="crypto-addr" id="trc20-addr">TDPV3qcDgEMknupaQSf9ia2PDmd1pPcL3S</p>
+                    <button class="btn btn-secondary btn-full" type="button" onclick="copyCryptoAddr('trc20-addr', this)">Copy TRC20 address</button>
+                </article>
+            </div>
+        </section>
+
+        <footer>
+            <p>© 2026 Bojro. Built with care.</p>
+        </footer>
+    </main>
 
     <script src="script.js"></script>
 </body>
